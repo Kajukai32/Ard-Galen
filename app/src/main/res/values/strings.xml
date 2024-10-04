@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">JJOO2024SegundaParte</string>
+    <string name="juegos_ol_mpicos_2024">Juegos Olímpicos 2024</string>
+    <string name="userhint">Usuario</string>
+    <string name="login_password">Password</string>
+    <string name="log_in">log in</string>
+    <string name="sign_up">sign up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="registrar_usuario">registrar usuario</string>
+    <string name="try_sign_up">registrarse</string>
+    <string name="helptv">ayuda</string>
+    <string name="emailReference">ejemplo123@gmail.com</string>
+    <string name="new_user_password_hint">mínimo 8 caracteres</string>
+    <string name="hi_there">HI THERE</string>
+</resources>

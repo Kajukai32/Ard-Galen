@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="login_background">#3D2FD0</color>
+    <color name="login_buttons">#3025A3</color>
+    <color name="sign_up_buttons">#7D91B5</color>
+    <color name="login_et_background">#6F64DC</color>
+    <color name="sign_up_background">#5C76A3</color>
+    <color name="sign_up_help_text_color">#2C364E</color>
+
+</resources>

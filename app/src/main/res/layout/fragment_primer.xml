@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sign_up_background"
+    tools:context=".Fragments.PrimerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="@string/registrar_usuario" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/trySignUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:backgroundTint="@color/sign_up_buttons"
+        android:text="@string/try_sign_up"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAllCaps="true"/>
+
+</FrameLayout>
