@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/juegos_ol_mpicos_2024"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/linearEditabletexts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearEditabletexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLog">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etUser"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:hint="@string/userhint"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearEditabletexts">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="190dp"
+            android:backgroundTint="@color/login_buttons"
+            android:text="@string/log_in"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="190dp"
+            android:backgroundTint="@color/login_buttons"
+            android:text="@string/sign_up"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<Button-->
+    <!--    android:layout_width="0dp"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_weight="1"/>-->
+
+    <!--<TextView-->
+    <!--    android:layout_width="0dp"-->
+    <!--    android:text="example text"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_weight="1"/>-->
+
+<!--    https://youtu.be/6pZ8oPHD_70?t=472-->
