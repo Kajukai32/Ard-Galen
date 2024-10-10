@@ -44,11 +44,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun initComponents() {
 
-//        btnSignUp = findViewById(R.id.btnSignUp)
-//        btnLogin = findViewById(R.id.btnLogin)
-//        etUser = findViewById(R.id.etUser)
-//        etPassword = findViewById(R.id.etPassword)
-//        tvForgottenPassword = findViewById(R.id.tvForgottenPassword)
 
 
     }

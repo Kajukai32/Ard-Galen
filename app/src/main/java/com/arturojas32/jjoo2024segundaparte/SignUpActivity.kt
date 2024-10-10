@@ -8,14 +8,8 @@ import com.arturojas32.jjoo2024segundaparte.databinding.ActivitySignUpBinding
 import functions.displayToast
 
 class SignUpActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivitySignUpBinding
-//    private lateinit var etNewUserPassword: AppCompatEditText
-//    private lateinit var etNicknameNewUser: AppCompatEditText
-//    private lateinit var etNameNewUser: AppCompatEditText
-//    private lateinit var etSurnameNewUser: AppCompatEditText
-//    private lateinit var trySignUpBtn: AppCompatButton
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
