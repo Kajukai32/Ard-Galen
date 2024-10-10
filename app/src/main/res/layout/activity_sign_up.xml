@@ -5,8 +5,8 @@
     android:id="@+id/SignUpActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="25sp"
     android:background="@color/sign_up_background"
+    android:padding="25sp"
     tools:context=".SignUpActivity">
 
 
@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/registrar_usuario"
+        android:text="@string/new_user"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="25sp"
@@ -29,17 +29,18 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvSignUp">
 
 
-        <EditText
-            android:id="@+id/etNewUser"
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etNicknameNewUser"
             android:layout_width="350dp"
             android:layout_height="40dp"
             android:layout_margin="30dp"
-            android:hint="@string/emailReference"
+            android:hint="@string/nickname"
             android:singleLine="true"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
@@ -54,41 +55,64 @@
             android:layout_width="350dp"
             android:layout_height="40dp"
             android:layout_margin="30dp"
-            android:hint="@string/new_user_password_hint"
+            android:hint="@string/password"
             android:inputType="textPassword"
+            android:maxLength="35"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etNameNewUser"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:hint="@string/nombre"
             android:maxLength="10"
             android:singleLine="true"
             android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/trySignUpBtn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/etNewUser" />
+            android:textColorHint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etSurnameNewUser"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:hint="@string/surname"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginBottom="45dp"
+        android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="25dp">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/trySignUpBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
+            android:width="380dp"
             android:backgroundTint="@color/sign_up_buttons"
-            android:text="@string/try_sign_up"
+            android:text="@string/sign_up"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:width="380dp"
-             />
+            android:textStyle="bold" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    users.add(User(2802L, "AHOZ", "lock_password", "Aylen", "Hoz", 20000.50, "2021/01/11"))-->

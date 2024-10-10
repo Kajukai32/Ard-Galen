@@ -11,5 +11,11 @@
     <string name="helptv">ayuda</string>
     <string name="emailReference">ejemplo123@gmail.com</string>
     <string name="new_user_password_hint">mínimo 8 caracteres</string>
-    <string name="hi_there">HI THERE</string>
+    <string name="hi_there">aca va el menu principal</string>
+    <string name="reset_pas_text">Forgotten your password?</string>
+    <string name="nickname">nickname</string>
+    <string name="password">password</string>
+    <string name="nombre">nombre</string>
+    <string name="surname">surname</string>
+    <string name="new_user">new user</string>
 </resources>

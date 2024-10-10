@@ -1,6 +1,7 @@
-package repositories
+package com.arturojas32.jjoo2024segundaparte.Repository
 
 import data.User
+import functions.Currentdate
 
 object UserRepository {
 
@@ -18,6 +19,41 @@ object UserRepository {
         return (users.find { it.nickName == string && it.password == password })
 
     }
+
+    fun signUp(
+        nickname: String,
+        password: String,
+        name: String,
+        surname: String,
+        money: Double
+    ): Boolean {
+
+        return if (logIn(nickname, password) == null && nickname.isNotBlank() && password.isNotBlank()) {
+            users.add(
+                User(
+                    generateIdUser(),
+                    nickname,
+                    password,
+                    name,
+                    surname,
+                    money,
+                    Currentdate()
+                )
+            )
+        } else {
+            false
+        }
+
+    }
+
 }
 
 
+val generateIdUser: () -> Long = { System.currentTimeMillis() }
+
+//import kotlinx.datetime.*
+//
+//val localDateTime = LocalDateTime(2022, 12, 31, 23, 59, 59) // December 31, 2022, 23:59:59
+//val instant = localDateTime.toInstant(ZoneId.systemDefault())
+//val millis = instant.toEpochMilli()
+//println(millis) // Output: 1672514399000

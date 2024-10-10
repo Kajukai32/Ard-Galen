@@ -48,10 +48,25 @@
             android:layout_margin="30dp"
             android:hint="@string/login_password"
             android:inputType="textPassword"
-            android:maxLength="10"
+            android:maxLength="30"
             android:singleLine="true"
             android:textColor="@color/white"
             android:textColorHint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvForgottenPassword"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_pas_text"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -62,6 +77,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearEditabletexts">
 
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
@@ -69,9 +85,9 @@
             android:width="190dp"
             android:backgroundTint="@color/login_buttons"
             android:text="@string/log_in"
+            android:enabled="false"
             android:textAllCaps="true"
             android:textColor="@color/white" />
-
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignUp"
@@ -89,19 +105,3 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!--<LinearLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content">-->
-
-    <!--<Button-->
-    <!--    android:layout_width="0dp"-->
-    <!--    android:layout_height="wrap_content"-->
-    <!--    android:layout_weight="1"/>-->
-
-    <!--<TextView-->
-    <!--    android:layout_width="0dp"-->
-    <!--    android:text="example text"-->
-    <!--    android:layout_height="wrap_content"-->
-    <!--    android:layout_weight="1"/>-->
-
-<!--    https://youtu.be/6pZ8oPHD_70?t=472-->

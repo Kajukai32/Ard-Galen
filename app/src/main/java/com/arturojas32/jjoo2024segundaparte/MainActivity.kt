@@ -2,46 +2,66 @@ package com.arturojas32.jjoo2024segundaparte
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatButton
-import androidx.appcompat.widget.AppCompatEditText
-import repositories.UserRepository
+import com.arturojas32.jjoo2024segundaparte.Repository.UserRepository
+import com.arturojas32.jjoo2024segundaparte.databinding.ActivityMainBinding
+import functions.displayToast
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
+//    private lateinit var btnSignUp: AppCompatButton
+//    private lateinit var btnLogin: AppCompatButton
+//    private lateinit var etUser: AppCompatEditText
+//    private lateinit var etPassword: AppCompatEditText
+//    private lateinit var tvForgottenPassword: TextView
+
+    private lateinit var user: String
+    private lateinit var password: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.activity_main)
-
-        val btnSignUp = findViewById<AppCompatButton>(R.id.btnSignUp)
-        val btnLogin = findViewById<AppCompatButton>(R.id.btnLogin)
-        val etUser = findViewById<AppCompatEditText>(R.id.etUser)
-        val etPassword = findViewById<AppCompatEditText>(R.id.etPassword)
-
-        val user = etUser.text.toString().trim()
-        val password = etPassword.text.toString().trim()
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
-        btnSignUp.setOnClickListener { goToSignUpActivity() }
-        btnLogin.setOnClickListener { goToLogInActivity(user, password) }
+        initComponents()
+        initListeners()
+
+        binding.tvForgottenPassword.setOnClickListener { displayToast("te jodés", this) }
+
 
     }
 
-    private fun goToLogInActivity(user: String, password: String) {
-//        Toast.makeText(MainActivity.this, "Clicked Button", Toast.LENGTH_SHORT).show()
+    private fun initListeners() {
+
+        binding.btnLogin.setOnClickListener { goToLogInActivity() }
+        binding.btnSignUp.setOnClickListener { goToSignUpActivity() }
+
+    }
+
+    private fun initComponents() {
+
+//        btnSignUp = findViewById(R.id.btnSignUp)
+//        btnLogin = findViewById(R.id.btnLogin)
+//        etUser = findViewById(R.id.etUser)
+//        etPassword = findViewById(R.id.etPassword)
+//        tvForgottenPassword = findViewById(R.id.tvForgottenPassword)
+
+
+    }
+
+    private fun goToLogInActivity() {
+        user = binding.etUser.text.toString()
+        password = binding.etPassword.text.toString()
+
         if (UserRepository.logIn(user, password) != null) {
             val intent = Intent(this, MenuActivity::class.java)
             startActivity(intent)
         } else {
-            Toast.makeText(
-                this,
-                "Error de verificacion",
-                Toast.LENGTH_SHORT
-            ).show()
+            displayToast("Log in failed", this)
         }
     }
 
@@ -52,31 +72,3 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-//var LoginWatcher: TextWatcher = object : TextWatcher {
-//    override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {}
-//    override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
-//        val userName: String = etEmail.getText().toString()
-//        val userPass: String = PassEt.getText().toString()
-//        button.setEnabled(!userName.isEmpty() && !userPass.isEmpty())
-//    }
-//
-//    override fun afterTextChanged(editable: Editable) {}
-//}
-
-
-//println("Nombre por favor: ")
-//nickname = readlnOrNull().toString()
-//
-//println("Password: ")
-//password = readlnOrNull().toString()
-//
-//Usuario = logIn(nickname, password)
-//
-//if (Usuario == null) println("usuario inexistente / password incorrecto \n")
-//
-//} while (Usuario == null)
-//
-//println("En que puedo ayudarte ${Usuario.name}?")
-//menu(Usuario)
-//
-//}
