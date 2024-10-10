@@ -1,5 +1,7 @@
 package functions
 
+import android.content.Context
+import android.widget.Toast
 import data.Country
 import data.Elite
 import data.Event
@@ -56,6 +58,7 @@ fun menu(usuario: User) {
     }
 
 }
+
 
 fun menuDeCompra(usuario: User) {
 
@@ -129,14 +132,15 @@ fun menuDeCompra(usuario: User) {
 
         }
     } catch (e: IllegalArgumentException) {
-        println("IllegalArgumentException: ${ e.message.toString() }")
+        println("IllegalArgumentException: ${e.message.toString()}")
         menu(usuario)
     }
 }
 
 fun verHistorial(user: User) {
 
-    var historial = PurchaseRepository.get().filter { it.userId == user.id }.sortedBy { it.createdDate }
+    var historial =
+        PurchaseRepository.get().filter { it.userId == user.id }.sortedBy { it.createdDate }
     for (purchase in historial) {
         println(
             " Fecha de compra: ${purchase.createdDate}\n Total de la compra: ${purchase.amount}\n" +
@@ -171,4 +175,11 @@ fun mostrarEventosDisp(lista: List<Event>, usuario: User) {
 
 }
 
-fun Currentdate(): String = LocalDate.now().toString() 
+
+fun Currentdate(): String = LocalDate.now().toString()
+
+fun displayToast(msg: String, contextCompat: Context) {
+
+    Toast.makeText(contextCompat, msg, Toast.LENGTH_SHORT).show()
+
+}

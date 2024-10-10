@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.arturojas32.jjoo2024segundaparte"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -33,12 +33,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    viewBinding {
+        enable = true
+    }
 }
 
 dependencies {
 
     implementation(libs.androidx.ui.test.android)
-    val fragment_version = "1.6.1"
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -47,6 +49,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    val fragment_version = "1.6.1"
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
 
 
