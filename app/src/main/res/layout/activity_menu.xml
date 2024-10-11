@@ -3,20 +3,87 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/menuActivity"
+    style="@style/Base.Theme.JJOO2024SegundaParte"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/login_background"
     tools:context=".MenuActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hi_there"
-        android:textColor="@color/white"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMedallero"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/login_buttons"
+        android:text="@string/medallero"
         android:textAllCaps="true"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPurchHistory"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/login_buttons"
+        android:text="@string/historial_de_compras"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnPurchase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMedallero" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPurchase"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/login_buttons"
+        android:text="@string/purchase"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnEvents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPurchHistory" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEvents"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/login_buttons"
+        android:text="@string/available_events"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPurchase" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExit"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/login_buttons"
+        android:text="@string/exit"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEvents" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/hi_there"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textAllCaps="true"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->

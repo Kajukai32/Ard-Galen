@@ -13,8 +13,16 @@
         android:theme="@style/Theme.JJOO2024SegundaParte"
         tools:targetApi="31">
         <activity
+            android:name=".RecyclerViews.RViewMedalActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            -->
+<!--            android:name=".RecyclerViews.MainActivity"-->
+<!--            android:exported="false" />-->
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
+
         <activity
             android:name=".SignUpActivity"
             android:exported="false"

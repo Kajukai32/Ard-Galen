@@ -18,4 +18,9 @@
     <string name="nombre">nombre</string>
     <string name="surname">surname</string>
     <string name="new_user">new user</string>
+    <string name="medallero">table</string>
+    <string name="historial_de_compras">purchase history</string>
+    <string name="purchase">purchase</string>
+    <string name="available_events">available events</string>
+    <string name="exit">exit</string>
 </resources>

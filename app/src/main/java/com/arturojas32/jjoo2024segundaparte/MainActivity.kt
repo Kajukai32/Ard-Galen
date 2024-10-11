@@ -11,11 +11,6 @@ import functions.displayToast
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
-//    private lateinit var btnSignUp: AppCompatButton
-//    private lateinit var btnLogin: AppCompatButton
-//    private lateinit var etUser: AppCompatEditText
-//    private lateinit var etPassword: AppCompatEditText
-//    private lateinit var tvForgottenPassword: TextView
 
     private lateinit var user: String
     private lateinit var password: String
@@ -45,15 +40,17 @@ class MainActivity : AppCompatActivity() {
     private fun initComponents() {
 
 
-
     }
 
     private fun goToLogInActivity() {
         user = binding.etUser.text.toString()
         password = binding.etPassword.text.toString()
 
+
         if (UserRepository.logIn(user, password) != null) {
             val intent = Intent(this, MenuActivity::class.java)
+            intent.putExtra("usuario", user)
+            intent.putExtra("password", password)
             startActivity(intent)
         } else {
             displayToast("Log in failed", this)

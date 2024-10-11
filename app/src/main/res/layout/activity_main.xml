@@ -85,7 +85,6 @@
             android:width="190dp"
             android:backgroundTint="@color/login_buttons"
             android:text="@string/log_in"
-            android:enabled="false"
             android:textAllCaps="true"
             android:textColor="@color/white" />
 
