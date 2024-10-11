@@ -131,8 +131,7 @@ object MedalTableRepository {
 
 
     fun get(): List<Country> {
-        var lista = countries.sortedBy { it.goldMedals }.reversed()
 
-        return lista //TODO Implementar solucion para obtener medallero
+        return countries.sortedBy { it.goldMedals }.reversed()
     }
 }

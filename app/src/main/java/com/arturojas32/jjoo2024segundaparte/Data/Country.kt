@@ -1,6 +1,6 @@
 package data
 
-data class Country(
+data class   Country(
     val id: Long,
     val position: Int,
     val name: String,
