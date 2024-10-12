@@ -8,5 +8,8 @@
     <color name="login_et_background">#6F64DC</color>
     <color name="sign_up_background">#5C76A3</color>
     <color name="sign_up_help_text_color">#2C364E</color>
+    <color name="gold_badge">#F7F108</color>
+    <color name="silver_badge">#CACEC5</color>
+    <color name="bronze_badge">#A97F0E</color>
 
 </resources>

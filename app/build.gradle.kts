@@ -51,6 +51,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     val fragment_version = "1.6.1"
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
 
 
 }

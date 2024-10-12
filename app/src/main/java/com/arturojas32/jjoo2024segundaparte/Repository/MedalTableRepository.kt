@@ -10,7 +10,7 @@ object MedalTableRepository {
     init {
         countries.add(
             Country(
-                1L,
+                15L,
                 1,
                 "Estados Unidos",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png",
@@ -22,7 +22,7 @@ object MedalTableRepository {
 
         countries.add(
             Country(
-                2L,
+                8L,
                 2,
                 "China",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/1024px-Flag_of_the_People%27s_Republic_of_China.svg.png",
@@ -34,7 +34,7 @@ object MedalTableRepository {
 
         countries.add(
             Country(
-                3L,
+                78L,
                 3,
                 "Argentina",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/2560px-Flag_of_Argentina.svg.png",
@@ -46,7 +46,7 @@ object MedalTableRepository {
 
         countries.add(
             Country(
-                4L,
+                16L,
                 4,
                 "Alemania",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/640px-Flag_of_Germany.svg.png",
@@ -58,7 +58,7 @@ object MedalTableRepository {
 
         countries.add(
             Country(
-                5L,
+                55L,
                 5,
                 "Japón",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png",
@@ -70,7 +70,7 @@ object MedalTableRepository {
 
         countries.add(
             Country(
-                6L,
+                60L,
                 6,
                 "Reino Unido",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png",
@@ -82,7 +82,7 @@ object MedalTableRepository {
 
         countries.add(
             Country(
-                7L,
+                10L,
                 7,
                 "Francia",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg/1200px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg.png",
@@ -94,11 +94,11 @@ object MedalTableRepository {
 
         countries.add(
             Country(
-                8L,
+                66L,
                 8,
                 "Australia",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png",
-                16,
+                15,
                 14,
                 12
             )
@@ -106,7 +106,7 @@ object MedalTableRepository {
 
         countries.add(
             Country(
-                9L,
+                1L,
                 9,
                 "Italia",
                 "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg",
@@ -118,7 +118,7 @@ object MedalTableRepository {
 
         countries.add(
             Country(
-                10L,
+                123L,
                 10,
                 "Canadá",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/800px-Flag_of_Canada_%28Pantone%29.svg.png",
