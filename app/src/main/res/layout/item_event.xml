@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:background="@color/login_buttons"
+    app:cardCornerRadius="13dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_buttons">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEventID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_id_resource"
+            app:layout_constraintBottom_toTopOf="@id/tvCreateDate"
+            app:layout_constraintEnd_toStartOf="@id/tvEventHour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCreateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_created_date_resource"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvEventPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEventID" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEventHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_hour_resource"
+            app:layout_constraintBottom_toTopOf="@id/tvEventPrice"
+            app:layout_constraintEnd_toStartOf="@id/tvEventPlace"
+            app:layout_constraintStart_toEndOf="@id/tvEventID"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEventPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_place_resource"
+            app:layout_constraintBottom_toTopOf="@id/tvEventSport"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvEventHour"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEventPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_price_resource"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvEventSport"
+            app:layout_constraintStart_toEndOf="@id/tvCreateDate"
+            app:layout_constraintTop_toBottomOf="@id/tvEventHour" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEventSport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_sport_resource"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvEventPrice"
+            app:layout_constraintTop_toBottomOf="@id/tvEventPlace" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
