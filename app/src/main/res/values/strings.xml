@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">JJOO2024SegundaParte</string>
+    <string name="app_name">London 2024</string>
     <string name="juegos_ol_mpicos_2024">Juegos Olímpicos 2024</string>
     <string name="userhint">Usuario</string>
     <string name="login_password">Password</string>
@@ -18,9 +18,17 @@
     <string name="nombre">nombre</string>
     <string name="surname">surname</string>
     <string name="new_user">new user</string>
-    <string name="medallero">table</string>
+    <string name="medallero">medal table</string>
     <string name="historial_de_compras">purchase history</string>
     <string name="purchase">purchase</string>
     <string name="available_events">available events</string>
     <string name="exit">exit</string>
+    <string name="idString">ID:</string>
+    <string name="urlImageWindowBackground">https://images.pexels.com/photos/1084464/pexels-photo-1084464.jpeg</string>
+    <string name="event_id_resource">Event Id:</string>
+    <string name="event_created_date_resource">Created Date:</string>
+    <string name="event_hour_resource">hour</string>
+    <string name="event_place_resource">place</string>
+    <string name="event_price_resource">"price: "</string>
+    <string name="event_sport_resource">"sport: "</string>
 </resources>

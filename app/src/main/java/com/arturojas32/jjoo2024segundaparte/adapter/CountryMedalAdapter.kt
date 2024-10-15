@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.arturojas32.jjoo2024segundaparte.R
+import com.arturojas32.jjoo2024segundaparte.viewHolders.CountryMedalViewHolder
 import data.Country
 
 class CountryMedalAdapter(private val listCountriesByMedals: List<Country>) :

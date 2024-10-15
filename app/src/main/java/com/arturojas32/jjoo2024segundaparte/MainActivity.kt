@@ -3,8 +3,8 @@ package com.arturojas32.jjoo2024segundaparte
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.arturojas32.jjoo2024segundaparte.Repository.UserRepository
 import com.arturojas32.jjoo2024segundaparte.databinding.ActivityMainBinding
+import com.arturojas32.jjoo2024segundaparte.repository.UserRepository
 import functions.displayToast
 
 
@@ -49,8 +49,10 @@ class MainActivity : AppCompatActivity() {
 
         if (UserRepository.logIn(user, password) != null) {
             val intent = Intent(this, MenuActivity::class.java)
+            val idUser = UserRepository.logIn(user, password)!!.id
             intent.putExtra("usuario", user)
-            intent.putExtra("password", password)
+            intent.putExtra("idUser", idUser)
+//            intent.putExtra("password", password)
             startActivity(intent)
         } else {
             displayToast("Log in failed", this)

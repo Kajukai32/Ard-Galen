@@ -1,4 +1,4 @@
-package com.arturojas32.jjoo2024segundaparte.Fragments
+package com.arturojas32.jjoo2024segundaparte.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

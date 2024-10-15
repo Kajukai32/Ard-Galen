@@ -52,7 +52,7 @@ fun menu(usuario: User) {
 
         MenuDeOpciones.MEDALLERO -> mostrarMedallero(MedalTableRepository.get(), usuario)
         MenuDeOpciones.MOSTRAREVENTOS -> mostrarEventosDisp(EventRepository.get(), usuario)
-        MenuDeOpciones.HISTORIALCOMPRAS -> verHistorial(usuario)
+        MenuDeOpciones.HISTORIALCOMPRAS -> purchaseHistory(0L)
         MenuDeOpciones.COMPRARENTRADA -> menuDeCompra(usuario)
         MenuDeOpciones.SALIR -> Creditos()
     }
@@ -137,19 +137,12 @@ fun menuDeCompra(usuario: User) {
     }
 }
 
-fun verHistorial(user: User) {
+fun purchaseHistory(id: Long): List<Purchase> {
 
-    var historial =
-        PurchaseRepository.get().filter { it.userId == user.id }.sortedBy { it.createdDate }
-    for (purchase in historial) {
-        println(
-            " Fecha de compra: ${purchase.createdDate}\n Total de la compra: ${purchase.amount}\n" +
-                    " EventId: ${purchase.eventId}\n Id de la compra: ${purchase.id}\n Asiento: ${purchase.seat}\n ID de Usuario: ${purchase.userId}\n"
-        )
-    }
-    menu(user)
+    return PurchaseRepository.get().filter { it.userId == id }.sortedBy { it.createdDate }
 
 }
+
 
 fun mostrarMedallero(lista: List<Country>, usuario: User) {
 

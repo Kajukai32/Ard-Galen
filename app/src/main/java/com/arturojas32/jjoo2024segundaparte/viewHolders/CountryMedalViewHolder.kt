@@ -1,4 +1,4 @@
-package com.arturojas32.jjoo2024segundaparte.adapter
+package com.arturojas32.jjoo2024segundaparte.viewHolders
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView.ViewHolder

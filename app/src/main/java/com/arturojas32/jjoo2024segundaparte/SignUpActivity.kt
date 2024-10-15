@@ -3,8 +3,8 @@ package com.arturojas32.jjoo2024segundaparte
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.arturojas32.jjoo2024segundaparte.Repository.UserRepository.signUp
 import com.arturojas32.jjoo2024segundaparte.databinding.ActivitySignUpBinding
+import com.arturojas32.jjoo2024segundaparte.repository.UserRepository.signUp
 import functions.displayToast
 
 class SignUpActivity : AppCompatActivity() {
@@ -48,11 +48,7 @@ class SignUpActivity : AppCompatActivity() {
 
 
     private fun initComponents() {
-//        etNicknameNewUser = findViewById(R.id.etNicknameNewUser)
-//        etNewUserPassword = findViewById(R.id.etNewUserPassword)
-//        etNameNewUser = findViewById(R.id.etNameNewUser)
-//        etSurnameNewUser = findViewById(R.id.etSurnameNewUser)
-//        trySignUpBtn = findViewById(R.id.trySignUpBtn)
+
 
     }
 }

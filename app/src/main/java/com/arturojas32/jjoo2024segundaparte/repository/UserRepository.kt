@@ -1,4 +1,4 @@
-package com.arturojas32.jjoo2024segundaparte.Repository
+package com.arturojas32.jjoo2024segundaparte.repository
 
 import data.User
 import functions.Currentdate
